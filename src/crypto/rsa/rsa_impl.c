@@ -782,7 +782,7 @@ static int keygen(RSA *rsa, int bits, BIGNUM *e_value, BN_GENCB *cb) {
   r1 = BN_CTX_get(ctx);
   r2 = BN_CTX_get(ctx);
   r3 = BN_CTX_get(ctx);
-  if (r3 == NULL) {
+  if (r0 == NULL || r1 == NULL || r2 == NULL || r3 == NULL) {
     goto err;
   }
 
