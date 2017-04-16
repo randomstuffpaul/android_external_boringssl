@@ -35,7 +35,7 @@ unsigned long getauxval(unsigned long type) __attribute__((weak));
 extern uint32_t OPENSSL_armcap_P;
 
 char CRYPTO_is_NEON_capable(void) {
-  return (OPENSSL_armcap_P & ARMV7_NEON) != 0;
+  return CRYPTO_is_NEON_functional();
 }
 
 static char g_set_neon_called = 0;
