@@ -126,6 +126,7 @@ crypto_sources := \
   src/crypto/ec/ec_key.c\
   src/crypto/ec/ec_montgomery.c\
   src/crypto/ec/oct.c\
+  src/crypto/ec/p224-64.c\
   src/crypto/ec/p256-64.c\
   src/crypto/ec/simple.c\
   src/crypto/ec/util-64.c\
