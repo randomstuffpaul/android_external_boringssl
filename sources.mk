@@ -128,6 +128,7 @@ crypto_sources := \
   src/crypto/ec/oct.c\
   src/crypto/ec/p224-64.c\
   src/crypto/ec/p256-64.c\
+  src/crypto/ec/p256-x86_64.c\
   src/crypto/ec/simple.c\
   src/crypto/ec/util-64.c\
   src/crypto/ec/wnaf.c\
@@ -369,6 +370,7 @@ linux_x86_64_sources := \
   linux-x86_64/crypto/bn/x86_64-mont.S\
   linux-x86_64/crypto/bn/x86_64-mont5.S\
   linux-x86_64/crypto/cpu-x86_64-asm.S\
+  linux-x86_64/crypto/ec/p256-x86_64-asm.S\
   linux-x86_64/crypto/md5/md5-x86_64.S\
   linux-x86_64/crypto/modes/aesni-gcm-x86_64.S\
   linux-x86_64/crypto/modes/ghash-x86_64.S\
@@ -404,6 +406,7 @@ mac_x86_64_sources := \
   mac-x86_64/crypto/bn/x86_64-mont.S\
   mac-x86_64/crypto/bn/x86_64-mont5.S\
   mac-x86_64/crypto/cpu-x86_64-asm.S\
+  mac-x86_64/crypto/ec/p256-x86_64-asm.S\
   mac-x86_64/crypto/md5/md5-x86_64.S\
   mac-x86_64/crypto/modes/aesni-gcm-x86_64.S\
   mac-x86_64/crypto/modes/ghash-x86_64.S\
@@ -439,6 +442,7 @@ win_x86_64_sources := \
   win-x86_64/crypto/bn/x86_64-mont.asm\
   win-x86_64/crypto/bn/x86_64-mont5.asm\
   win-x86_64/crypto/cpu-x86_64-asm.asm\
+  win-x86_64/crypto/ec/p256-x86_64-asm.asm\
   win-x86_64/crypto/md5/md5-x86_64.asm\
   win-x86_64/crypto/modes/aesni-gcm-x86_64.asm\
   win-x86_64/crypto/modes/ghash-x86_64.asm\
